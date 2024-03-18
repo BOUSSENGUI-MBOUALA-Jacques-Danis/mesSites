@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+
+}
+body{
+    background-color: #000000;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+body h4{
+    color: #fff;
+    font-size: 25px;
+}
+header{
+    padding: 0 10%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: animation2 2s linear;
+    
+}
+
+header a{
+    padding: 8px 30px;
+    text-decoration: 0;
+    font-size: 18px;
+    color: #5753cb;
+    transition: 0.5s ease-out;
+    border: #5753cb 2px solid;
+    position: relative;
+}
+
+header a:hover::after{
+    
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 50px;
+    width: 15px;
+    height: 15px;
+    border: #5753cb 2px solid;
+    background-color: #5753cb;
+    border-radius: 50%;
+
+}
+
+header a:hover::before{
+    
+    position: absolute;
+    content: "";
+    right: 10px;
+    bottom: 50px;
+    width: 15px;
+    height: 15px;
+    border: #5753cb 2px solid;
+    background-color: #5753cb;
+    border-radius: 50%;
+
+}
+header a:hover{
+    background-color: #5753cb;
+    border: #5753cb 2px solid;
+    transform: rotate(10deg);
+    border-radius: 6px;
+    color: #fff;
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 80px);
+
+}
+
+.left-rigth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+
+.left{
+    width: 45%;
+    animation-delay: 1s;
+    animation: animation1 2s linear;
+
+
+}
+.left span{
+    color: #20669D;
+    font-size: 20px;
+}
+
+.left h1{
+    width: 45%;
+    color: #fff;
+    font-size: 30px;
+    margin: 20px 0;
+    animation-delay: 2s;
+    animation: animation1 2s linear;
+    
+}
+
+.left p{
+    
+    color: #999;
+    font-size: 12px;
+    
+    
+}
+
+
+.left .buttons{
+    
+    margin: 30px 0;
+    animation-delay: 3s;
+    animation: animation1 2s linear;
+    
+    
+}
+
+
+.left .buttons a{
+    
+    padding: 8px 30px;
+    text-decoration: 0;
+    font-size: 15px;
+    
+}
+
+.buttons a:first-child{
+    border: #5753cb 2px solid;
+    color: #5753cb  ;
+
+}
+
+.buttons a:last-child{
+    border: #5753cb 2px solid;
+    color: #fff  ;
+    background-color: #5753cb;
+    margin-left: 10px;
+
+}
+
+.rigth{
+    width: 40%;
+    perspective: 1000px;
+
+}
+
+
+.rigth img{
+    width: 100%;
+    height: 600px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    animation-delay: 2s;
+    animation: animation1 2s linear;
+    
+  
+}
+
+
+.rigth img:hover{
+    transform: rotateY(180deg);
+  
+}
+
+
+/* animations*/
+
+@keyframes animation1{
+    from{
+        transform:translateX(-600px);
+    }
+}
+
+@keyframes animation2{
+    from{
+        transform:translateY(-100px);
+    }
+}
